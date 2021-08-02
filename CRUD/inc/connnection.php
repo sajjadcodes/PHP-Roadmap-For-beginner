@@ -15,5 +15,5 @@ try{
 }
 
 
-var_dump($dbConnection);
+
 
