@@ -18,9 +18,14 @@ $page = "projects";
         }
 
         else{
-                echo "Title = $title </br>";
+                if(add_project($title, $category)){
+                        header('Location:  project_list.php');
+                        exit();
+                }
+                else{
 
-                echo "category = $category</br>";
+                    $error_message ="Could not Add the project";
+                }
 
         }
 
