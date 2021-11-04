@@ -28,13 +28,13 @@
     <h3>This is print_r</h3>
     <h3><?php print_r($obj);?></h3>
 
-    <h3>User Name : <?php echo $obj->username;?></h3>
-    <h3>Email : <?php echo $obj->email;?></h3>
+    <h3>User Name : <?php echo $obj->getUser();?></h3>
+    <h3>Email : <?php echo $obj->getEmail();?></h3>
 
     <h3>Object second</h3>
     
-    <h3>User Name : <?php echo $obj1->username;?></h3>
-    <h3>Email : <?php echo $obj1->email;?></h3>
+    <h3>User Name : <?php echo $obj1->getUser();?></h3>
+    <h3>Email : <?php echo $obj1->getEmail();?></h3>
 
     <?php echo $obj->addFriend();?>
 
@@ -45,5 +45,16 @@
     <h2>What methods are avialable inside the class? we use get_class_methods();</h2>
 
     <h2><?php print_r(get_class_methods('User'));?></h2>
+
+    <h1>Getters</h1>
+    <?php
+
+    $obj1->setEmail('test@gmail.com');  
+
+    ?>
+    <h3><?php echo $obj1->getUser();?></h3>
+    <h3><?php echo $obj1->getEmail();?></h3>
+
+    
 </body>
 </html>

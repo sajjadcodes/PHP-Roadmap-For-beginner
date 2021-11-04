@@ -26,10 +26,10 @@
 class User {
 
     // properties
+    //access modifier, private, public , protected
+    private $username = 'ryu';
 
-    public $username = 'ryu';
-
-    public $email = "myemail@email.com";
+    private $email = "myemail@email.com";
     //constructor
     public function __construct($user,$email){
 
@@ -44,6 +44,44 @@ class User {
 
 
         return "$this->username";
+    }
+
+
+    // access more control way by using getter= return and setter = assign value
+
+    //getters
+
+    public function getUser(){
+            return $this->username;
+    }
+
+    public function getEmail(){
+
+        return $this->email;
+
+    }
+
+    //setters
+
+    public function setEmail($email){
+
+        if(strpos($email,'@') > -1){
+
+            $this->email = $email;
+
+        }
+        else{
+
+            echo "Please enter email address";
+        }
+
+    }
+
+
+    public function setUser($user){
+
+
+
     }
 
 
