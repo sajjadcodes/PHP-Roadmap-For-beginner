@@ -1,6 +1,7 @@
 <?php 
 
     require 'userClass.php';
+    // require 'inheritance.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -54,6 +55,21 @@
     ?>
     <h3><?php echo $obj1->getUser();?></h3>
     <h3><?php echo $obj1->getEmail();?></h3>
+
+    <?php 
+    
+    $admin = new AdminUser('SuperAdmin', 'SuperAdmin@gmail.com','Super');
+
+    var_dump($admin);
+    ?>
+
+    <?php print_r(get_class_methods('AdminUser'));?>
+
+
+    <h1>This is Admin name: <?php echo $admin->getUser();?></h1>
+    <h1>This is Admin email: <?php echo $admin->getEmail();?></h1>
+    <h1>This is Admin level: <?php echo $admin->level;?></h1>
+
 
     
 </body>

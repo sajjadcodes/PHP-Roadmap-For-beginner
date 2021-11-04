@@ -90,3 +90,18 @@ class User {
 
 
 
+class AdminUser  extends User{
+
+
+    public  $level;
+
+    public function __construct($username, $email, $level){
+
+        $this->level = $level;
+        parent::__construct($username,$email);
+
+
+
+    }
+
+}
