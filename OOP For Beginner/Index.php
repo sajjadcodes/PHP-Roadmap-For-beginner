@@ -14,9 +14,9 @@
 <?php 
 
     //instansciating 
-      $obj = new User();
+      $obj = new User('sajjad', 'sajjadcodes@gmail.com');
 
-      $obj1 = new User();
+      $obj1 = new User('admin', 'admin@gmail.com');
 
 ?>    
 
@@ -28,8 +28,14 @@
     <h3>This is print_r</h3>
     <h3><?php print_r($obj);?></h3>
 
+    <h3>User Name : <?php echo $obj->username;?></h3>
+    <h3>Email : <?php echo $obj->email;?></h3>
+
+    <h3>Object second</h3>
+    
     <h3>User Name : <?php echo $obj1->username;?></h3>
     <h3>Email : <?php echo $obj1->email;?></h3>
+
     <?php echo $obj->addFriend();?>
 
     <h2>What variables are avialable inside the class? we use get_class_vars();</h2>

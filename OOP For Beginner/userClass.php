@@ -31,9 +31,10 @@ class User {
 
     public $email = "myemail@email.com";
     //constructor
-    public function __construct(){
+    public function __construct($user,$email){
 
-            
+            $this->username = $user;
+            $this->email=$email;
 
     }
 
