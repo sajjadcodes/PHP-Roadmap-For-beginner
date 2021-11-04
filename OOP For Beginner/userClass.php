@@ -25,6 +25,12 @@
 
 class User {
 
+    // properties
+
+    public $username = 'ryu';
+
+    public $email = "myemail@email.com";
+
     public function __construct(){
 
             echo "This is user class";
