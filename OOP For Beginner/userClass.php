@@ -30,12 +30,21 @@ class User {
     public $username = 'ryu';
 
     public $email = "myemail@email.com";
-
+    //constructor
     public function __construct(){
 
-            echo "This is user class";
+            
 
     }
+
+    public function addFriend(){
+
+        //$this keyword, this instance of the class
+
+
+        return "$this->username";
+    }
+
 
 }
 
