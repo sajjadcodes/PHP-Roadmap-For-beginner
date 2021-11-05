@@ -69,6 +69,9 @@
     <h1>This is Admin name: <?php echo $admin->getUser();?></h1>
     <h1>This is Admin email: <?php echo $admin->getEmail();?></h1>
     <h1>This is Admin level: <?php echo $admin->level;?></h1>
+    <h1>Message using Obj: <?php echo $obj->message;?></h1>
+    <h1>Message using Obj1: <?php echo $obj1->message;?></h1>
+    <h1>Message using Admin: <?php echo $admin->message;?></h1>
 
 
     

@@ -30,6 +30,8 @@ class User {
     private $username = 'ryu';
 
     private $email = "myemail@email.com";
+
+    public $message ="Hello, I am a message";
     //constructor
     public function __construct($user,$email){
 
@@ -93,8 +95,9 @@ class User {
 class AdminUser  extends User{
 
 
+    public $message ="This is override in admin";
     public  $level;
-
+//constructor. child override parent. if you want to still parent load parent then use call parent parent constructor here.
     public function __construct($username, $email, $level){
 
         $this->level = $level;
